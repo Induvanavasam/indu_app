@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-23 10:32:08.353200",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "phone_number",
+  "alternate_phone_number",
+  "email",
+  "address",
+  "order_product",
+  "our_cocktails",
+  "date_of_birth",
+  "id_proof",
+  "add_to_cart",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "options": "+91",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_phone_number",
+   "fieldtype": "Phone",
+   "label": "Alternate Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address"
+  },
+  {
+   "fieldname": "order_product",
+   "fieldtype": "Select",
+   "label": "our items",
+   "options": "--Select your item here--\nPotato Chips (e.g., Lay's, Pringles)\nFrench Fries\nPizza (e.g., Domino's, Pizza Hut)\nCheeseburgers (e.g., McDonald's, Burger King)\nFried Chicken (e.g., KFC, Popeyes)\nHot Dogs\nNachos\nCandy Bars (e.g., Snickers, Kit Kat)\nIce Cream (e.g., Ben & Jerry's, H\u00e4agen-Dazs)\nDonuts (e.g., Krispy Kreme, Dunkin')"
+  },
+  {
+   "fieldname": "our_cocktails",
+   "fieldtype": "Select",
+   "label": "our cocktails(Alcohol)",
+   "options": "---Select your  item here---\nBudweiser\nRed Bulls\nHeineken\nJack Daniel's\nBacardi\nGrey Goose\nJohnnie Walker"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "date_of_birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Attach Image",
+   "label": "id_proof"
+  },
+  {
+   "fieldname": "add_to_cart",
+   "fieldtype": "Button",
+   "label": "Add to cart"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "TasteBlend Delights",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-31 08:12:21.247815",
+ "modified_by": "Administrator",
+ "module": "Indu App",
+ "name": "TasteBlend Delights",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

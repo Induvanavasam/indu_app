@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-22 12:20:03.332409",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "order_product",
+  "order_id",
+  "phone_number",
+  "email",
+  "address",
+  "nationality",
+  "advance_amount",
+  "total_amount",
+  "payment_method",
+  "paynow"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "full name"
+  },
+  {
+   "fieldname": "order_product",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order product "
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Order Id"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "phone number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "advance_amount",
+   "fieldtype": "Currency",
+   "label": "Advance amount"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "total amount"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Select",
+   "label": "payment method",
+   "options": "cash\nupi\nbank transfer"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "nationality"
+  },
+  {
+   "fieldname": "paynow",
+   "fieldtype": "Link",
+   "label": "paynow",
+   "options": "product details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "order details",
+   "link_fieldname": "customized_name"
+  }
+ ],
+ "modified": "2023-08-31 08:39:38.826661",
+ "modified_by": "Administrator",
+ "module": "frappe_docs",
+ "name": "customer_order_details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
